@@ -49,6 +49,7 @@ Simulation Round on “Evaluation, Detection and Attribution”.
 
 **Revised target date for uploading simulation outputs: Jan 30th,
 2023**  
+  
 Uploading simulations by this date is essential to ensure enough time
 for analysis and writing of manuscripts in time for presentation of
 preliminary results at the FishMIP workshop Oct 3-7th and for submission
@@ -784,9 +785,9 @@ January 1st, 1840.
 
 <table style="width:99%;">
 <colgroup>
-<col style="width: 33%" />
+<col style="width: 34%" />
 <col style="width: 7%" />
-<col style="width: 4%" />
+<col style="width: 3%" />
 <col style="width: 4%" />
 <col style="width: 49%" />
 </colgroup>
