@@ -779,7 +779,7 @@ information on how to prepare these files can be found
 Aspatial regional model results may be saved as .csv files.
 
 In the output files, please label the time variable as months since
-January 1st, 1840.
+January 1st, 1841.
 
 ##### Table 9: Mandatory output variables for Fisheries and Marine Ecosystem models (global and regional). See notes on additional optional model outputs below. Please use the value 1.e+20 for missing data within your output files. **All biomasses are in wet weight (not g C).**
 
