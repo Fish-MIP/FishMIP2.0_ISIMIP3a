@@ -126,7 +126,7 @@ Each model experiment is a set of model simulations that has a particular goal (
 
 #### Scenario definitions
 
-| Throughout the protocol we use 'specifiers' that are shortened names used to denote a particular scenario, variables, or other parameter in the filenames of model inputs and outputs. It is crucial that you also use the same specifiers in your output files.
+| Throughout the protocol we use 'specifiers' that are shortened names used to denote a particular scenario, variables, or other parameter in the filenames of model inputs and outputs. It is crucial that you also use the same specifiers in your output files.
 | 
 | **Correct formatting and naming of output files are essential for model intercomparison and analysis.**
 | 
@@ -430,7 +430,7 @@ are also available here:
 
 All spatially gridded outputs should be created as netcdf files. More information on how to prepare these files can be found [here](https://www.isimip.org/protocol/preparing-simulation-files). Aspatial regional model results may be saved as .csv files.
 
-In the output files, please label the time variable as months since January 1st, 1840.
+In the output files, please label the time variable as months since January 1st, 1841.
 
 ##### Table 9: Mandatory output variables for Fisheries and Marine Ecosystem models (global and regional). See notes on additional optional model outputs below. Please use the value 1.e+20 for missing data within your output files. **All biomasses are in wet weight (not g C).**
 
@@ -560,13 +560,13 @@ File names consist of a series of identifier, separated by underscores. Things t
 
 -   Use hyphens (-) to separate strings within an identifier, e.g. in a model name.
 
--   Data model is NETCDF4_CLASSIC with minimum compression level of 5.
+-   Data model is NETCDF4_CLASSIC with minimum compression level of 5.
 
--   NetCDF file extension is .nc.
+-   NetCDF file extension is .nc.
 
 -   For models using spin-up, include the final 10 years of spin-up in your results.
 
--   The relative time axis' reference year and month to include in model output is months since January 1^st^ 1841.
+-   The relative time axis' reference date days since January 1^st^ 1901 for ISIMIP3a. We have provided a .csv file to be used for the time dimension in creating NetCDF files based on the 365 days calendar.
 
 Please name the files in the Fisheries and Marine Ecosystems sector according to the following pattern:
 

@@ -233,7 +233,7 @@ evaluation assessment of model drift.
 
 #### Scenario definitions
 
-Throughout the protocol we use ‘specifiers’ that are shortened names
+Throughout the protocol we use ‘specifiers’ that are shortened names
 used to denote a particular scenario, variables, or other parameter in
 the filenames of model inputs and outputs. It is crucial that you also
 use the same specifiers in your output files.  
@@ -1060,15 +1060,17 @@ Things to note:
 - Use hyphens (-) to separate strings within an identifier, e.g. in a
   model name.
 
-- Data model is NETCDF4_CLASSIC with minimum compression level of 5.
+- Data model is NETCDF4_CLASSIC with minimum compression level of 5.
 
-- NetCDF file extension is .nc.
+- NetCDF file extension is .nc.
 
 - For models using spin-up, include the final 10 years of spin-up in
   your results.
 
-- The relative time axis’ reference year and month to include in model
-  output is months since January 1<sup>st</sup> 1841.
+- The relative time axis’ reference date days since January
+  1<sup>st</sup> 1901 for ISIMIP3a. We have provided a .csv file to be
+  used for the time dimension in creating NetCDF files based on the 365
+  days calendar.
 
 Please name the files in the Fisheries and Marine Ecosystems sector
 according to the following pattern:
