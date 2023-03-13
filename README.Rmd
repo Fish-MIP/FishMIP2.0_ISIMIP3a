@@ -146,13 +146,11 @@ Each model experiment is a set of model simulations that has a particular goal (
 
 ##### Table 2: Climate scenario specifiers (climate-scenario).
 
-------------------------------------------------------------------------
-
-+--------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
-| Scenario specifier | Description                                                                                                                             |
-+:===================+:========================================================================================================================================+
-| **obsclim**        | Climate with observed atmospheric forcing and river input forcing used for model evaluation and the detection and attribution task.     |
-+--------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
++------------------------+------------------------------------------------------------------------------------------------------------------------------------+
+| **Scenario specifier** | **Description**                                                                                                                    |
++:=======================+:===================================================================================================================================+
+| **obsclim**            | Climate with observed atmospheric forcing and river input forcing used for model evaluation and the detection and attribution task.|
++------------------------+------------------------------------------------------------------------------------------------------------------------------------+
 
 ##### Table 3: Socio-economic scenario specifiers (soc-scenario).
 
@@ -169,13 +167,13 @@ Each model experiment is a set of model simulations that has a particular goal (
 +----------------------------------+--------------------------------------------------------------------------------------------------------------+
 | **Scenario specifier**           | **Description**                                                                                              |
 +:=================================+:=============================================================================================================+
-| **default**                      | 0.25 degree resolution climate model inputs                                                                  |
+| **default**                      | 0.25 degree resolution climate model inputs.                                                                 |
 +----------------------------------+--------------------------------------------------------------------------------------------------------------+
-| **1955-riverine-input**.         | No temporal (land-use change) dynamics influencing river influx                                              |
+| **1955-riverine-input**.         | No temporal (land-use change) dynamics influencing river influx.                                             |
 +----------------------------------+--------------------------------------------------------------------------------------------------------------+
-| **60arcmin**                     | 1 degree resolution climate model inputs                                                                     |
+| **60arcmin**                     | 1 degree resolution climate model inputs.                                                                    |
 +----------------------------------+--------------------------------------------------------------------------------------------------------------+
-| **1955-riverine-input+60arcmin** | No temporal (land-use change) dynamics influencing river influx and 1 degree resolution climate model inputs |                        |
+| **1955-riverine-input+60arcmin** | No temporal (land-use change) dynamics influencing river influx and 1 degree resolution climate model inputs.| 
 +----------------------------------+--------------------------------------------------------------------------------------------------------------+
 
 **Please remember to use these same specifiers in your output files. More on reporting data can be found at the end of this document.**
@@ -419,7 +417,7 @@ Modelling groups **must** keep **detailed documentation** on how their model was
 The fisheries catch data .csv file that can be used for model calibration is here: 
 
 ```linux
-socioeconomic/fishing/histsoc/calibration_catch_histsoc_1850_2004.csv.
+levante:/work/bb0820/ISIMIP/ISIMIP3a/InputData/socioeconomic/fishing/histsoc/calibration_catch_histsoc_1850_2004.csv.
 ```
 
 The fisheries catch data are already aggregated into the functional groups and spatial zones as the above effort forcing data. The original reference including links to full database is [Watson & Tidd, 2018, Marine Policy, 93: 171-177](https://www.sciencedirect.com/science/article/pii/S0308597X18300605).
