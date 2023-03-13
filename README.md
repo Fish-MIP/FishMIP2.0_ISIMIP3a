@@ -149,12 +149,12 @@ to observed reconstructed fishing effort time series (histsoc).</p></li>
 <td><p>3.Climate, no river input forcing, fishing – high res</p>
 <ul>
 <li><p><strong>CF:</strong> Climate variability constrained by
-reanalysis atmospheric forcing (GFDL-COBALT2 “<em>control run</em>” only
+reanalysis atmospheric forcing (GFDL-COBALT2 “<em>control run</em>” (ctrlclim) only
 forced by JRA-55) using <strong>0.25 degree grid</strong></p></li>
 <li><p><strong>DHF:</strong> Varying direct human influences according
 to observed reconstructed fishing effort time series (histsoc).</p></li>
 </ul></td>
-<td><p><strong>ctrlclim</strong></p>
+<td><p><strong>obsclim</strong></p>
 <p><strong>histsoc</strong></p></td>
 <td><strong>1955-riverine-input</strong></td>
 </tr>
@@ -166,7 +166,7 @@ to observed reconstructed fishing effort time series (histsoc).</p></li>
 grid</strong></p></li>
 <li><p><strong>DHF:</strong> without any fishing activity (nat)</p></li>
 </ul></td>
-<td><p><strong>ctrlclim</strong></p>
+<td><p><strong>obsclim</strong></p>
 <p><strong>nat</strong></p></td>
 <td><strong>1955-riverine-input</strong></td>
 </tr>
