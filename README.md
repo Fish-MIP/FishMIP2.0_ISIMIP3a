@@ -104,9 +104,9 @@ listed below. Please prioritize the core runs below, and provide the
 <table style="width:99%;">
 <colgroup>
 <col style="width: 13%" />
-<col style="width: 66%" />
+<col style="width: 64%" />
 <col style="width: 8%" />
-<col style="width: 10%" />
+<col style="width: 13%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -124,7 +124,7 @@ listed below. Please prioritize the core runs below, and provide the
 <ul>
 <li><p><strong>CF:</strong> Climate variability constrained by
 reanalysis atmospheric forcing (GFDL-COBALT2 forced by JRA-55 and river
-inputs) using 0.25 degree grid</p></li>
+inputs) using <strong>0.25 degree grid</strong></p></li>
 <li><p><strong>DHF:</strong> Varying direct human influences according
 to observed reconstructed fishing effort time series (histsoc).</p></li>
 </ul></td>
@@ -136,7 +136,8 @@ to observed reconstructed fishing effort time series (histsoc).</p></li>
 <td></td>
 <td><p>2.Climate, river inputs, no fishing – high res</p>
 <ul>
-<li><p><strong>CF:</strong>  same as above using 0.25 grid</p></li>
+<li><p><strong>CF:</strong>  same as above using <strong>0.25 degree
+grid</strong></p></li>
 <li><p><strong>DHF:</strong> without any fishing activity (nat)</p></li>
 </ul></td>
 <td><p><strong>obsclim</strong></p>
@@ -154,7 +155,7 @@ forced by JRA-55) using <strong>0.25 degree grid</strong></p></li>
 <li><p><strong>DHF:</strong> Varying direct human influences according
 to observed reconstructed fishing effort time series (histsoc).</p></li>
 </ul></td>
-<td><p><strong>ctrlclim</strong></p>
+<td><p><strong>obsclim</strong></p>
 <p><strong>histsoc</strong></p></td>
 <td><strong>1955-riverine-input</strong></td>
 </tr>
@@ -162,11 +163,11 @@ to observed reconstructed fishing effort time series (histsoc).</p></li>
 <td></td>
 <td><p>4.Climate, no river input forcing, no fishing – high res</p>
 <ul>
-<li><p><strong>CF:</strong>  same as above using <strong>0.25
+<li><p><strong>CF:</strong>  same as above using <strong>0.25 degree
 grid</strong></p></li>
 <li><p><strong>DHF:</strong> without any fishing activity (nat)</p></li>
 </ul></td>
-<td><p><strong>ctrlclim</strong></p>
+<td><p><strong>obsclim</strong></p>
 <p><strong>nat</strong></p></td>
 <td><strong>1955-riverine-input</strong></td>
 </tr>
@@ -198,20 +199,47 @@ grid</strong></p></li>
 <p><strong>nat</strong></p></td>
 <td><strong>60arcmin</strong></td>
 </tr>
+<tr class="odd">
+<td><p><strong>Control sensitivity test</strong></p>
+<p>2 optional runs</p></td>
+<td><p>7.Climate, river input forcing, fishing – low res</p>
+<ul>
+<li><p><strong>CF:</strong> Climate variability constrained by
+reanalysis atmospheric forcing (GFDL-COBALT2 forced by JRA-55 and river
+inputs <strong>obsclim</strong>) using <strong>1 degree
+grid</strong></p></li>
+<li><p><strong>DHF:</strong> Varying direct human influences according
+to observed reconstructed fishing effort time series (histsoc).</p></li>
+</ul></td>
+<td><p><strong>obsclim</strong></p>
+<p><strong>histsoc</strong></p></td>
+<td><strong>1955-riverine-input+60arcmin</strong></td>
+</tr>
+<tr class="even">
+<td></td>
+<td><p>8.Climate, river input forcing, no fishing – low res</p>
+<ul>
+<li><p><strong>CF</strong>:  same as above using <strong>1 degree
+grid</strong></p></li>
+<li><p><strong>DHF:</strong> without any fishing activity (nat)</p></li>
+</ul></td>
+<td><p><strong>obsclim</strong></p>
+<p><strong>nat</strong></p></td>
+<td><strong>1955-riverine-input+60arcmin</strong></td>
+</tr>
 </tbody>
 </table>
 
-#### Note on historical period 1961-2010, spin-up, and transition period
+#### Note on spin-up and transition period (1841-1960), and historical (experiment) period 1961-2010
 
 The focal historical period for this model evaluation experiment spans
 1961-2010. To capture the transition from a pre-industrial spin-up to
 1961 we also provide input for a gradual increase in fishing and
 environmental variability for the pre-industrial period to 1961.  
   
-For historical fishing effort prior to 1961, we provide input for a
-nominal spin-up (1841-1860, fishing held constant at 1861 levels) and
-pre-industrial transition period (1861-1960, reconstructed fishing
-effort).  
+For fishing effort prior to 1961, we provide input for a nominal spin-up
+(1841-1860, fishing held constant at 1861 levels) and pre-industrial
+transition period (1861-1960, reconstructed fishing effort).  
   
 To set-up climate-forcing variables for the entire 1841-1960 period, we
 ask modellers to use the “control run” (ctrlclim) monthly output for the
@@ -229,7 +257,9 @@ For the ‘no fishing’ runs (nat), the spin-up and pre-industrial
 transition should not use any fishing effort.  
   
 We ask modellers to include all outputs from 1841 onwards for use in our
-evaluation assessment of model drift.
+evaluation assessment of model drift. Each output should be saved as two
+files, the first covering the spin-up and transition period (1841-1960)
+and the second covering the histirical (experiment) period (1961-2010).
 
 #### Scenario definitions
 
@@ -252,25 +282,26 @@ model results).
 
 ------------------------------------------------------------------------
 
-| Scenario specifier | Description                                                                                                                             |
-|:-------------------|:----------------------------------------------------------------------------------------------------------------------------------------|
-| **obsclim**        | Climate with observed atmospheric forcing and river input forcing used for model evaluation and the detection and attribution task.     |
-| **ctrlclim**       | Climate with only observed atmospheric forcing being used as a control run for model evaluation and the detection and attribution task. |
+| Scenario specifier | Description                                                                                                                         |
+|:-------------------|:------------------------------------------------------------------------------------------------------------------------------------|
+| **obsclim**        | Climate with observed atmospheric forcing and river input forcing used for model evaluation and the detection and attribution task. |
 
 ##### Table 3: Socio-economic scenario specifiers (soc-scenario).
 
-| **Scenario specifier** | **Description**                                                                                                     |
-|:-----------------------|:--------------------------------------------------------------------------------------------------------------------|
-| **histsoc**            | Varying direct human influences in the historical period (1950-2014) (i.e. historical estimates of fishing effort). |
-| **nat**                | No fishing (naturalized run).                                                                                       |
+| **Scenario specifier** | **Description**                                                                |
+|:-----------------------|:-------------------------------------------------------------------------------|
+| **histsoc**            | Varying direct human influences (i.e. historical estimates of fishing effort). |
+| **nat**                | No fishing (naturalized run).                                                  |
 
 ##### Table 4: Sensitivity scenario specifiers (sens-scenario).
 
-| **Scenario specifier**  | **Description**                                                 |
-|:------------------------|:----------------------------------------------------------------|
-| **default**             | 0.25 degree resolution climate model inputs                     |
-| **1955-riverine-input** | No temporal (land-use change) dynamics influencing river influx |
-| **60arcmin**            | 1 degree resolution climate model inputs                        |
+|                                                                       |                                                                                                                                                                            |
+|-----------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Scenario specifier** :================================= **default** | **Description** :============================================================================================================= 0.25 degree resolution climate model inputs |
+|                                                                       |                                                                                                                                                                            |
+| **1955-riverine-input**.                                              | No temporal (land-use change) dynamics influencing river influx                                                                                                            |
+| **60arcmin**                                                          | 1 degree resolution climate model inputs                                                                                                                                   |
+| **1955-riverine-input+60arcmin**                                      | No temporal (land-use change) dynamics influencing river influx and 1 degree resolution climate model inputs                                                               |
 
 **Please remember to use these same specifiers in your output files.
 More on reporting data can be found at the end of this document.**
@@ -741,7 +772,10 @@ template will be provided for this documentation in due course.
 
 The fisheries catch data .csv file that can be used for model
 calibration is here:
+
+``` linux
 socioeconomic/fishing/histsoc/calibration_catch_histsoc_1850_2004.csv.
+```
 
 The fisheries catch data are already aggregated into the functional
 groups and spatial zones as the above effort forcing data. The original
@@ -763,9 +797,7 @@ Each region has its own variable within each file.
 We have also provided conversion tables that can be used to look up LME
 and SAUP names according to the numeric codes used in the catch and
 effort files (e.g. LME 22 – North Sea). These files (SAUPnames.csv and
-LMEnames.csv
-
-are also available here:
+LMEnames.csv) are also available here:
 
 ``` linux
 /work/bb0820/ISIMIP/ISIMIP3a/InputData/geo_conditions/fishmip_regions/
@@ -778,8 +810,10 @@ information on how to prepare these files can be found
 [here](https://www.isimip.org/protocol/preparing-simulation-files).
 Aspatial regional model results may be saved as .csv files.
 
-In the output files, please label the time variable as months since
-January 1st, 1841.
+In the output files, please label the time variable as “days since
+1841-1-1 00:00:00” if the output covers the spin-up and transition
+period (1841-1960) or “days since 1901-1-1 00:00:00” if the output
+covers the experiment period (1961-2010).
 
 ##### Table 9: Mandatory output variables for Fisheries and Marine Ecosystem models (global and regional). See notes on additional optional model outputs below. Please use the value 1.e+20 for missing data within your output files. **All biomasses are in wet weight (not g C).**
 
@@ -1067,52 +1101,87 @@ Things to note:
 - For models using spin-up, include the final 10 years of spin-up in
   your results.
 
-- The relative time axis’ reference date days since January
-  1<sup>st</sup> 1901 for ISIMIP3a. We have provided a .csv file to be
-  used for the time dimension in creating NetCDF files based on the 365
-  days calendar.
+- The relative time axis’ reference date is days since 1841-1-1 00:00:00
+  if the output covers the spin-up and transition period (1841-1960) or
+  days since 1901-1-1 00:00:00 if the output covers the experiment
+  period (1961-2010). We have provided .csv files to be used for the
+  time dimension in creating NetCDF files based on the 365 days
+  calendar.
+
+### Name pattern of output files:
 
 Please name the files in the Fisheries and Marine Ecosystems sector
 according to the following pattern:
 
-### **Global models**
+**Global models**
 
 ``` linux
 <model>_<climate-forcing>_<bias-adjustment>_<climate-scenario>_<soc-scenario>_<sens-scenario>_<variable>_<global>_<time-step>_<start-year>_<end-year>.nc
 ```
 
-### **Regional models**
+Example:
+
+``` linux
+boats_gfdl-mom6_cobalt2_none_obsclim_histsoc_default_tcb_global_monthly_1961_2010.nc
+```
+
+**Regional models**
 
 ``` linux
 <model>_<climate-forcing>_<bias-adjustment>_<climate-scenario>_<soc-scenario>_<sens-scenario>_<variable>_<region>_<time-step>_<start-year>_<end-year>.nc
 ```
 
-and replace the identifiers with the specifiers given in the tables of
-this document.
-
-### Examples:
-
-***Global***
+Example:
 
 ``` linux
-boats_gfdl-mom6_cobalt2_none_ obsclim_histsoc_15arcmin_tcb_global_monthly_1840_2010.nc
+osmose_gfdl-mom6_cobalt2_none_obsclim_histsoc_default_tcb_benguela_monthly_1961_2010.nc
 ```
 
-***Regional***
+Please see the climate-scenario, soc-scenario, sens-scenario and
+variable identifiers given in the tables of this document.
+
+### Path to outut files on DKRZ:
+
+**Global models**
+
+The output files covering the spin-up period (1841-1960) can be saved on
+DKRZ here:
 
 ``` linux
-osmose_gfdl-mom6_cobalt2_none_ obsclim_histsoc_15arcmin _tcb_benguela_monthly_1840_2010.nc
+/work/bb0820/ISIMIP/ISIMIP3a/UploadArea/marine-fishery_global/model_name/temp2
 ```
 
-Please if you have any questions or clarifications, contact FishMIP
-coordinators or ISIMIP data managers directly
+The output files covering the experiment period (1961-2010) can be saved
+on DKRZ here
+
+``` linux
+/work/bb0820/ISIMIP/ISIMIP3a/UploadArea/marine-fishery_global/model_name/temp
+```
+
+**Regional models**
+
+The output files covering the spin-up period (1841-1960) can be saved on
+DKRZ here:
+
+``` linux
+/work/bb0820/ISIMIP/ISIMIP3a/UploadArea/marine-fishery_regional/model_name/temp2
+```
+
+The output files covering the experiment period (1961-2010) can be saved
+on DKRZ here
+
+``` linux
+/work/bb0820/ISIMIP/ISIMIP3a/UploadArea/marine-fishery_regional/model_name/temp
+```
+
+Please contact FishMIP coordinators or ISIMIP data managers directly
 ([isimip-data@pik‐potsdam.de](mailto:isimip-data@pik%E2%80%90potsdam.de))
-before submitting files.
+if you have any questions or clarifications before submitting files or
+if you do not find your model’s path on DKRZ as described above.
 
-**Finally, please email FishMIP coordinators:**
-
-If you would like to participate in this simulation round but have
-encountered issues with any aspect of the protocol.
+**Please contact FishMIP coordinators** if you would like to participate
+in this simulation round but have encountered issues with any aspect of
+the protocol.
 
 (For fishing): please provide all assumptions about catchability,
 technological creep, and model calibration.
