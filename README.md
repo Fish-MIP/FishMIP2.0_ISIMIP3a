@@ -1095,15 +1095,14 @@ Things to note:
 
 - NetCDF file extension is .nc.
 
-- For models using spin-up, include the final 10 years of spin-up in
-  your results.
-
 - The relative time axis’ reference date is days since 1841-1-1 00:00:00
   if the output covers the spin-up and transition period (1841-1960) or
   days since 1901-1-1 00:00:00 if the output covers the experiment
   period (1961-2010). We have provided .csv files to be used for the
   time dimension in creating NetCDF files based on the 365 days
-  calendar.
+  calendar. Please see time_axix_spinup.csv and time_axis_experiment.csv
+  in this repository. The script time_axis.r was used to create these
+  files.
 
 ### Name pattern of output files:
 
