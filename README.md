@@ -32,9 +32,10 @@ This information will allow FishMIP to better target policy initiatives
 such as IPCC and IPBES by providing more robust uncertainty assessment,
 as well as advancing the state of FishMIP models for informing
 vulnerability, impact, and adaptation plans of coastal sea ecosystems
-and fisheries (requested by the FAO).
+and fisheries (requested by the FAO). It will also help move towards a
+detection and attribution framework.
 
-The focus of papers produced from this simulation round will be a
+The focus of studies produced from this simulation round will be a
 significant advance in at least two ways:
 
 1.  forcing models with higher spatial resolution of global climate
@@ -51,11 +52,9 @@ Simulation Round on “Evaluation, Detection and Attribution”.
 2023**  
   
 Uploading simulations by this date is essential to ensure enough time
-for analysis and writing of manuscripts in time for presentation of
-preliminary results at the FishMIP workshop Oct 3-7th and for submission
-to the Special Issue. If you are able to upload results sooner, that
-would be helpful. If you need more time, please let us know as soon as
-possible.
+for analysis and writing of manuscripts in time for submission to the
+Special Issue. If you are able to upload results sooner, that would be
+helpful. If you need more time, please let us know as soon as possible.
 
 Progress towards this deadline will be supported and facilitated through
 online global and regional modeller workshops to:
@@ -68,9 +67,6 @@ online global and regional modeller workshops to:
 - Tool sharing & troubleshooting
 
 - Check model outputs/issues
-
-We are also looking into upcoming in-person workshop options for the
-latter half of 2022 to brainstorm and discuss draft papers.
 
 In this document we describe the general experimental and scenario
 set-up (Section 3). Further down in Section 4 we include the details of
@@ -85,7 +81,7 @@ Further information on this protocol can be found here:
 
 **For this simulation round, we are asking you to run and upload 2 core
 runs, 2 optional (but preferred) detection and attribution runs, and 2
-optional sensitivity test runs, described below.**
+optional (but helpful) sensitivity test runs, described below.**
 
 ## Experiments & Scenarios
 
@@ -93,7 +89,7 @@ Each model experiment is a set of model simulations that has a
 particular goal (e.g. model evaluation). A scenario is a particular
 setting for forcing drivers that describes how each model run should be
 set up in the experiment, including both the type of climate forcing
-(CF) and the type of direct human forcing (DHF).
+(CF) and the type of direct human forcing (DHF), in particular fishing.
 
 **The model runs that we are requesting for this simulation round are
 listed below. Please prioritize the core runs below, and provide the
@@ -173,7 +169,7 @@ grid</strong></p></li>
 </tr>
 <tr class="odd">
 <td><p><strong>Resolution sensitivity test</strong></p>
-<p>2 optional runs</p></td>
+<p>2 optional (but helpful )runs</p></td>
 <td><p>5.Climate, river input forcing, fishing – low res</p>
 <ul>
 <li><p><strong>CF:</strong> Climate variability constrained by
@@ -202,7 +198,7 @@ grid</strong></p></li>
 <tr class="odd">
 <td><p><strong>Control sensitivity test</strong></p>
 <p>2 optional runs</p></td>
-<td><p>7.Climate, river input forcing, fishing – low res</p>
+<td><p>7.Climate, no river input forcing, fishing – low res</p>
 <ul>
 <li><p><strong>CF:</strong> Climate variability constrained by
 reanalysis atmospheric forcing (GFDL-COBALT2 forced by JRA-55 and river
@@ -217,7 +213,7 @@ to observed reconstructed fishing effort time series (histsoc).</p></li>
 </tr>
 <tr class="even">
 <td></td>
-<td><p>8.Climate, river input forcing, no fishing – low res</p>
+<td><p>8.Climate, no river input forcing, no fishing – low res</p>
 <ul>
 <li><p><strong>CF</strong>:  same as above using <strong>1 degree
 grid</strong></p></li>
@@ -259,7 +255,7 @@ transition should not use any fishing effort.
 We ask modellers to include all outputs from 1841 onwards for use in our
 evaluation assessment of model drift. Each output should be saved as two
 files, the first covering the spin-up and transition period (1841-1960)
-and the second covering the histirical (experiment) period (1961-2010).
+and the second covering the historical (experiment) period (1961-2010).
 
 #### Scenario definitions
 
@@ -401,8 +397,7 @@ Chlorophyll</td>
 <tr class="odd">
 <td>Maximum Ocean Mixed Layer Thickness Defined by Sigma T</td>
 <td><strong>mlotst-0125</strong></td>
-<td><p>m</p>
-<p>m</p></td>
+<td>m</td>
 <td>0.25° , 1° grid</td>
 <td>GFDL-MOM6-COBALT2</td>
 </tr>
@@ -472,8 +467,8 @@ Water</td>
 <p><strong>so-bot</strong></p>
 <p><strong>so-surf</strong></p></td>
 <td><p>‰</p>
-<p>‰<br />
-‰</p></td>
+<p>‰</p>
+<p>%</p></td>
 <td>0.25° , 1° grid</td>
 <td>GFDL-MOM6-COBALT2</td>
 </tr>
@@ -707,7 +702,7 @@ sector summed across functional groups, gear, fishing country.</li>
 | Sector           | The fishing sector defined by the law of the country                                     | Name code        | I = Industrial and A = artisanal, where artisanal include powered and unpowered artisanal fleets                                                                                                                                                                                                           |
 | LME              | Large Marine Ecosystem Number                                                            | Number code      | A number code of the Large Marine ecosystem in which the Effort is occurring                                                                                                                                                                                                                               |
 | eez_country_name | Exclusive Economic Zone                                                                  | Name code        | The country-level exclusive economic zone (or high seas) name in which fishing effort is occurring                                                                                                                                                                                                         |
-| SAUP             | A number code for the fishing country, following Sea Around Us numbering                 | Number code      | Ex supranational entities (USSR, Yugoslavia) are disaggregated to their constituent countries. Serbian Fishing Effort included with Montenegro. Crimea included with Ukrainian.                                                                                                                            |
+| SAUP             | A number code for the fishing country, following Sea Around Us numbering                 | Number code      | Ex supranational entities (USSR, Yugoslavia) are disaggregated to their constituent countries. Serbian Fishing Effort included with Montenegro. Crimea included with Ukraine. \|                                                                                                                           |
 | Gear             | The fishing gear                                                                         | Name code        | Gear names                                                                                                                                                                                                                                                                                                 |
 | FGroup           | The targeted functional group                                                            | Name code        | Functional groups are in accordance with those used by the Sea Around Us Project                                                                                                                                                                                                                           |
 | NomActive        | Nominal fishing effort (i.e., not including the technological creep) of the active fleet | Days at sea X kW | NomActive (of the active fleet; i.e., total) = P (engine power of active the fleet; i.e., total) x DAS (average days at sea of one vessel). Average DAS for one vessel \~ 200 DAS/year. NomActive corresponds to the total (reported, IUU, discards) catch. To find NomActive in DAS do (NomActive/P) X NV |
