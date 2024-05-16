@@ -626,7 +626,7 @@ provided here: <https://github.com/Fish-MIP/FishMIP_extracting-data>
 <tbody>
 <tr class="odd">
 <td>File name</td>
-<td><code>socioeconomic/fishing/histsoc/effort_histsoc_1841_2010.csv</code></td>
+<td><code>socioeconomic/fishing/histsoc/effort_isimip3a_histsoc_1841_2010.csv</code></td>
 <td></td>
 <td></td>
 </tr>
@@ -655,7 +655,7 @@ Rousseau et al. 2022 in prep.</td>
 </tr>
 <tr class="odd">
 <td>File name</td>
-<td><code>socioeconomic/fishing/histsoc/gridded_industrial_effort_histsoc_1961_2010.csv</code></td>
+<td><code>socioeconomic/fishing/histsoc/effort-industrial-gridded_isimip3a_histsoc_1961_2010.csv</code></td>
 <td></td>
 <td></td>
 </tr>
@@ -674,7 +674,7 @@ sector summed across functional groups, gear, fishing country.</li>
 </tr>
 <tr class="odd">
 <td>File name</td>
-<td><code>socioeconomic/fishing/histsoc/gridded_artisanal_effort_histsoc_1961_2010.csv</code></td>
+<td><code>socioeconomic/fishing/histsoc/effort-artisanal-gridded_isimip3a_histsoc_1961_2010.csv</code></td>
 <td></td>
 <td></td>
 </tr>
@@ -766,7 +766,7 @@ The fisheries catch data .csv file that can be used for model
 calibration is here:
 
 ``` linux
-levante:/work/bb0820/ISIMIP/ISIMIP3a/InputData/socioeconomic/fishing/histsoc/calibration_catch_histsoc_1850_2004.csv.
+levante:/work/bb0820/ISIMIP/ISIMIP3a/InputData/socioeconomic/fishing/histsoc/catch-validation_isimip3a_histsoc_1850_2004.csv.
 ```
 
 The fisheries catch data are already aggregated into the functional
