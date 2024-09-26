@@ -24,13 +24,14 @@
 
 ## Goal
 
-The goal of the FishMIP Model Evaluation, Detection, and Attribution
-Protocol is to determine how well FishMIP marine ecosystem models can
-detect observed past changes in marine ecosystems and fisheries under
-realistic historical climate and fishing forcing. Provided the models
-can detect observed changes, we aim to gain a better understanding of
-the primary causes of these changes through sensitivity experiments
-(attribution).
+The goal of this FishMIP2.0 protocol is to determine how well FishMIP
+marine ecosystem models can detect observed past changes in marine
+ecosystems and fisheries under realistic historical climate and fishing
+forcing (Blanchard et al. 2024). We will do this by evaluating marine
+ecosystem model simulations against observational data (Rynne et
+al. 2024). Provided the models can detect observed changes adequately,
+we then aim to gain a better understanding of the primary causes of
+these changes through sensitivity experiments (attribution).
 
 This information will allow FishMIP to better target policy initiatives
 such as IPCC and IPBES by providing more robust uncertainty assessment,
