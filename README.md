@@ -1,8 +1,6 @@
 
 # FishMIP2.0: Evaluation, Detection, and Attribution Protocol
 
-# 
-
 ### <u>Contents</u>
 
 [Goal \[2\]](#goal)

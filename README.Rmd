@@ -4,8 +4,6 @@ output: github_document
 
 # FishMIP2.0: Evaluation, Detection, and Attribution Protocol
 
-# 
-
 ### [Contents]{.underline}
 
 [Goal [2]](#goal)
