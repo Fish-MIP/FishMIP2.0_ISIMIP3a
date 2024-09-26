@@ -1,5 +1,7 @@
 
-# FishMIP_2022_3a_Protocol
+# FishMIP2.0 Evaluation, Detection, and Attribution Protocol
+
+# 
 
 ### <u>Contents</u>
 
@@ -24,9 +26,13 @@
 
 ## Goal
 
-The goal of the FishMIP Model Evaluation Protocol is to understand and
-reduce uncertainty associated with FishMIP models through model
-evaluation under historical climate and fishing effort forcings.
+The goal of the FishMIP Model Evaluation, Detection, and Attribution
+Protocol is to determine how well FishMIP marine ecosystem models can
+detect observed past changes in marine ecosystems and fisheries under
+realistic historical climate and fishing forcing. Provided the models
+can detect observed changes, we aim to gain a better understanding of
+the primary causes of these changes through sensitivity experiments
+(attribution).
 
 This information will allow FishMIP to better target policy initiatives
 such as IPCC and IPBES by providing more robust uncertainty assessment,
@@ -48,8 +54,8 @@ significant advance in at least two ways:
 This protocol is designed to contribute directly to the ISIMIP 3a
 Simulation Round on “Evaluation, Detection and Attribution”.
 
-**Revised target date for uploading simulation outputs: Jan 30th,
-2023**  
+**Revised target date for uploading simulation outputs: Nov 30th,
+2024**  
   
 Uploading simulations by this date is essential to ensure enough time
 for analysis and writing of manuscripts in time for submission to the
@@ -609,28 +615,29 @@ provided here: <https://github.com/Fish-MIP/FishMIP_extracting-data>
 
 <table style="width:99%;">
 <colgroup>
-<col style="width: 14%" />
-<col style="width: 46%" />
-<col style="width: 5%" />
-<col style="width: 32%" />
+<col style="width: 13%" />
+<col style="width: 43%" />
+<col style="width: 8%" />
+<col style="width: 30%" />
+<col style="width: 3%" />
 </colgroup>
-<thead>
-<tr class="header">
-<th>Dataset</th>
-<th>Included variables (short names)</th>
-<th><p>Time period/</p>
-<p>Resolution</p></th>
-<th>Reference/Source and Comments</th>
-</tr>
-</thead>
 <tbody>
 <tr class="odd">
-<td>File name</td>
-<td><code>socioeconomic/fishing/histsoc/effort_isimip3a_histsoc_1841_2010.csv</code></td>
-<td></td>
+<td>Dataset</td>
+<td>Included variables (short names)</td>
+<td>Time period/Resolution</td>
+<td>Reference/Source and Comments</td>
 <td></td>
 </tr>
 <tr class="even">
+<td>File name</td>
+<td><code>socioeconomic/fishing/histsoc/effort_isimip3a_histsoc_1841_2010.csv</code>|
+|</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
 <td>Spatially aggregated fishing effort</td>
 <td><ul>
 <li><p>eez_country_name = The exclusive economic zone/high seas name in
@@ -652,14 +659,17 @@ country</p></li>
 </ul></td>
 <td>Sources: Rousseau et al., 2019, PNAS 116 (25) 12238-12243 and
 Rousseau et al. 2022 in prep.</td>
-</tr>
-<tr class="odd">
-<td>File name</td>
-<td><code>socioeconomic/fishing/histsoc/effort-industrial-gridded_isimip3a_histsoc_1961_2010.csv</code></td>
-<td></td>
 <td></td>
 </tr>
 <tr class="even">
+<td>File name</td>
+<td><code>socioeconomic/fishing/histsoc/effort-industrial-gridded_isimip3a_histsoc_1961_2010.csv</code>
+| |</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
 <td>Gridded total industrial fishing effort</td>
 <td><ul>
 <li>NomActive = Total nominal active fishing effort for the industrial
@@ -671,14 +681,17 @@ sector summed across functional groups, gear, fishing country.</li>
 <li><p>Annual</p></li>
 </ul></td>
 <td>Rousseau et al. 2022 in prep.</td>
-</tr>
-<tr class="odd">
-<td>File name</td>
-<td><code>socioeconomic/fishing/histsoc/effort-artisanal-gridded_isimip3a_histsoc_1961_2010.csv</code></td>
-<td></td>
 <td></td>
 </tr>
 <tr class="even">
+<td>File name</td>
+<td><code>socioeconomic/fishing/histsoc/effort-artisanal-gridded_isimip3a_histsoc_1961_2010.csv</code>
+| |</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
 <td>Gridded total artisanal fishing effort</td>
 <td><ul>
 <li>NomActive = Total nominal active fishing effort for the artisanal
@@ -690,6 +703,7 @@ sector summed across functional groups, gear, fishing country.</li>
 <li><p>Annual</p></li>
 </ul></td>
 <td>Rousseau et al. 2022 in prep.</td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -1180,7 +1194,7 @@ technological creep, and model calibration.
 Please provide any conversion factors that you have used to convert
 units.
 
-### **Thank you for your contributions to FishMIP and ISI-MIP!**
+### **Thank you for your contributions to FishMIP and ISIMIP!**
 
 FishMIP is entirely community-driven, and we appreciate the effort of
 all involved.
