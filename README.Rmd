@@ -22,8 +22,6 @@ output: github_document
 
 [Reporting model results [16]](#reporting-model-results)
 
-## 
-
 ## Goal {#goal}
 
 The goal of this FishMIP2.0 protocol is to determine how well FishMIP marine ecosystem models can detect observed past changes in marine ecosystems and fisheries under realistic historical climate and fishing forcing (Blanchard et al. 2024). We will do this by evaluating marine ecosystem model simulations against observational data (Rynne et al. 2024). Provided the models can detect observed changes adequately, we then aim to gain a better understanding of the primary causes of these changes through sensitivity experiments (attribution).

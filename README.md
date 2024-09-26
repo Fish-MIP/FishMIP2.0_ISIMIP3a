@@ -20,8 +20,6 @@
 
 [Reporting model results \[16\]](#reporting-model-results)
 
-## 
-
 ## Goal
 
 The goal of this FishMIP2.0 protocol is to determine how well FishMIP
