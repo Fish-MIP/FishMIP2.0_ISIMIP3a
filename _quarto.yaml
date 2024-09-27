@@ -2,22 +2,23 @@ project:
   type: website
   output-dir: docs
 
-website:
+
+url: https://fishmip.org/FishMIP2.0_ISIMIP3a/
 # title: "Fish-MIP"
-  image: "one_line_colour_logo.png"
-  favicon: assets/one-line-colour-logo_transparent_background.png
-  navbar:
-    background: primary
-    logo: "one_line_colour_logo.png"
-    logo-alt: FishMIP
-    logo-href: /index.html
-    collapse-below: lg
-    right:
-      - href: index.qmd
-        text: Home
-     - icon: github
-        href: https://github.com/Fish-MIP/FishMIP2.0_ISIMIP3a
-        target: _blank
+  # image: "assets/one_line_colour_logo.png"
+  # favicon: assets/one-line-colour-logo_transparent_background.png
+# navbar:
+#   background: primary
+    # logo: "one_line_colour_logo.png"
+    # logo-alt: FishMIP
+    # logo-href: /index.html
+    # collapse-below: lg
+    # right:
+    # - href: index.qmd
+    #   text: Home
+    # - icon: github
+    #   href: https://github.com/Fish-MIP/FishMIP2.0_ISIMIP3a
+    #  # target: _blank
       # - text: Approach
       #   href: about.qmd
       # - text: People
@@ -68,11 +69,11 @@ website:
       #   href: https://twitter.com/fishmip
       #   target: _blank
 
-  page-footer:
-      background: "#9FD0D7" 
-      left: "Copyright &copy; 2023 [Fish-MIP](https://github.com/Fish-MIP)"
-      center: "Built using [Quarto](https://quarto.org/)"
-      right: "<img src='assets/UN_OceanDecadeLogo.png' alt='UN Ocean Decade Logo' style='height: 7.5em; vertical-align: middle;'>"
+page-footer:
+    background: "#9FD0D7" 
+    left: "Copyright &copy; 2023 [Fish-MIP](https://github.com/Fish-MIP)"
+    center: "Built using [Quarto](https://quarto.org/)"
+    right: "<img src='assets/UN_OceanDecadeLogo.png' alt='UN Ocean Decade Logo' style='height: 7.5em; vertical-align: middle;'>"
 format:
   html:
     theme: custom.scss
