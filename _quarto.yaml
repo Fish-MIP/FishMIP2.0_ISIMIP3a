@@ -3,9 +3,9 @@ project:
   output-dir: docs
 
 website:
-#  title: "Fish-MIP"
+# title: "Fish-MIP"
   image: "one_line_colour_logo.png"
-  favicon: FishMIP_assets/one line logo/pngs/one-line-colour-logo_transparent_background.png
+  favicon: assets/one-line-colour-logo_transparent_background.png
   navbar:
     background: primary
     logo: "one_line_colour_logo.png"
@@ -15,16 +15,19 @@ website:
     right:
       - href: index.qmd
         text: Home
-      - text: Approach
-        href: about.qmd
-      - text: People
-        menu: 
-          - text: Science Coordination Group
-            href: sciencegroup.qmd
-          - text: Modelling Teams
-            href: modellingteams.qmd
-          - text: Working Groups
-            href: workinggroups.qmd
+     - icon: github
+        href: https://github.com/Fish-MIP/FishMIP2.0_ISIMIP3a
+        target: _blank
+      # - text: Approach
+      #   href: about.qmd
+      # - text: People
+      #   menu: 
+      #     - text: Science Coordination Group
+      #       href: sciencegroup.qmd
+      #     - text: Modelling Teams
+      #       href: modellingteams.qmd
+      #     - text: Working Groups
+      #       href: workinggroups.qmd
      # - text: Models
      #   menu: 
      #     - text: Global
@@ -32,12 +35,12 @@ website:
      #     - text: Regional
      #       href: regionalmodels.qmd
         #file: models.qmd
-      - text: Protocols
-        href: protocols.qmd
-      - text: Publications
-        href: publications.qmd
-      - text: Data & Tools
-        href: tools.qmd 
+      # - text: Protocols
+      #   href: protocols.qmd
+      # - text: Publications
+      #   href: publications.qmd
+      # - text: Data & Tools
+      #   href: tools.qmd 
       #  menu: 
        #    - text: Outputs
         #     href: outputs.qmd
@@ -53,29 +56,27 @@ website:
         #  - text: Terms of Use
           #  href: datatools/termsofuse.qmd
         #href: tools.qmd
-      - text: News
-        menu: 
-          - text: Events
-            href: events.qmd
-          - text: Blog
-            href: blogs.qmd
-      - text: Join us
-        href: joinus.qmd
-      - icon: twitter
-        href: https://twitter.com/fishmip
-        target: _blank
-      - icon: github
-        href: https://github.com/Fish-MIP
-        target: _blank
+      # - text: News
+      #   menu: 
+      #     - text: Events
+      #       href: events.qmd
+      #     - text: Blog
+      #       href: blogs.qmd
+      # - text: Join us
+      #   href: joinus.qmd
+      # - icon: twitter
+      #   href: https://twitter.com/fishmip
+      #   target: _blank
+
   page-footer:
       background: "#9FD0D7" 
       left: "Copyright &copy; 2023 [Fish-MIP](https://github.com/Fish-MIP)"
       center: "Built using [Quarto](https://quarto.org/)"
-      right: "<img src='FishMIP_assets/UN_OceanDecadeLogo.png' alt='UN Ocean Decade Logo' style='height: 7.5em; vertical-align: middle;'>"
+      right: "<img src='assets/UN_OceanDecadeLogo.png' alt='UN Ocean Decade Logo' style='height: 7.5em; vertical-align: middle;'>"
 format:
   html:
     theme: custom.scss
-    #css: styles.css
+    css: styles.css
     toc: false
     editor: visual
     
