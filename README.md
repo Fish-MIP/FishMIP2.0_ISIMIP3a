@@ -1176,8 +1176,8 @@ on DKRZ here
 /work/bb0820/ISIMIP/ISIMIP3a/UploadArea/marine-fishery_regional/model_name/temp
 ```
 
-Please contact FishMIP coordinators or ISIMIP data managers directly
-([isimip-data@pik‐potsdam.de](mailto:isimip-data@pik%E2%80%90potsdam.de))
+Please contact FishMIP coordinators ([fishmip.coordinators@gmail.com](mailto:fishmip.coordinators@gmail.com))
+or ISIMIP data managers directly ([isimip-data@pik‐potsdam.de](mailto:isimip-data@pik%E2%80%90potsdam.de))
 if you have any questions or clarifications before submitting files or
 if you do not find your model’s path on DKRZ as described above.
 
