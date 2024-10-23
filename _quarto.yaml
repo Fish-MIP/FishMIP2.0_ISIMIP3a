@@ -7,9 +7,9 @@ url: https://fishmip.org/FishMIP2.0_ISIMIP3a/
 # title: "Fish-MIP"
   # image: "assets/one_line_colour_logo.png"
   # favicon: assets/one-line-colour-logo_transparent_background.png
-# navbar:
-#   background: primary
-    # logo: "one_line_colour_logo.png"
+navbar:
+  background: primary
+  logo: "one_line_colour_logo.png"
     # logo-alt: FishMIP
     # logo-href: /index.html
     # collapse-below: lg
@@ -76,8 +76,8 @@ page-footer:
     right: "<img src='assets/UN_OceanDecadeLogo.png' alt='UN Ocean Decade Logo' style='height: 7.5em; vertical-align: middle;'>"
 format:
   html:
-    theme: custom.scss
-    css: styles.css
+    theme: cosmo
+ #   css: styles.css
     toc: false
     editor: visual
     

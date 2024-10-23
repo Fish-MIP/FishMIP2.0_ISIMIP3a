@@ -68,9 +68,6 @@ $p-font-size:                 1.25rem !default;
 $headings-font-weight:        600 !default;
 $headings-color:              $gray-900 !default;
 
-// Tables
-
-//$table-border-color:          rgba(108, 122, 137, 1) !default;
 
 // Buttons
 
@@ -256,39 +253,6 @@ body {
 
 .text-secondary {
   color: $body-color !important;
-}
-
-// Tables
-
-th {
-  font-size: $font-size-sm;
-  text-transform: uppercase;
-}
-
-.table {
-  th,
-  td {
-    padding: 0.5rem;
-  }
-
-  &-sm {
-    th,
-    td {
-      padding: 0.5rem;
-    }
-  }
-
-  .bold {
-    font-size: 1.25rem;
-    font-weight: 900;
-    color: $gray-900;
-  }
-  
-  .bold-p {
-    font-size: 1rem;
-    font-weight: 700;
-    color: $gray-800;
-  }
 }
 
 // Navs

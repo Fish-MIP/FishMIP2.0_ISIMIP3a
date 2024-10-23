@@ -6,21 +6,21 @@ output: html
 
 ### [Contents]{.underline}
 
-[Goal [2]](#goal)
+[Goal \[2\]](#goal)
 
-[Experiments & Scenarios [3]](#experiments-scenarios)
+[Experiments & Scenarios \[3\]](#experiments-scenarios)
 
-[Input data [6]](#input-data)
+[Input data \[6\]](#input-data)
 
-[Climate forcing [6]](#climate-forcing)
+[Climate forcing \[6\]](#climate-forcing)
 
-[Fishing effort forcing [11]](#fishing-effort-forcing)
+[Fishing effort forcing \[11\]](#fishing-effort-forcing)
 
-[Output data [14]](#output-data)
+[Output data \[14\]](#output-data)
 
-[Additional notes for Regional FishMIP Models [16]](#additional-notes-for-regional-fishmip-models)
+[Additional notes for Regional FishMIP Models \[16\]](#additional-notes-for-regional-fishmip-models)
 
-[Reporting model results [16]](#reporting-model-results)
+[Reporting model results \[16\]](#reporting-model-results)
 
 ## Goal {#goal}
 
@@ -316,43 +316,25 @@ A simple worked example on how to do this for specific regions in R is provided 
 
 ##### Table 7: Fishing effort forcing files and variables for FishMIP 3a simulations.
 
-+-----------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+------------------------+---------------------------------------------------------------------------------------------+---------+
-| Dataset                                 | Included variables (short names)                                                                                                      | Time period/Resolution | Reference/Source and Comments                                                               |         |
-+-----------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+------------------------+---------------------------------------------------------------------------------------------+---------+
-| File name                               | `socioeconomic/fishing/histsoc/effort_isimip3a_histsoc_1841_2010.csv`\| \|                                                            |                        |                                                                                             |         |
-+-----------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+------------------------+---------------------------------------------------------------------------------------------+---------+
-| Spatially aggregated fishing effort     | -   eez_country_name = The exclusive economic zone/high seas name in which fishing effort is occurring                                | -   1841-2010          | Sources: Rousseau et al., 2019, PNAS 116 (25) 12238-12243 and Rousseau et al. 2022 in prep. |         |
-|                                         |                                                                                                                                       |                        |                                                                                             |         |
-|                                         | -   LME = A number code of the Large Marine ecosystem in which the Effort is occurring                                                | -   Annual             |                                                                                             |         |
-|                                         |                                                                                                                                       |                        |                                                                                             |         |
-|                                         | -   SAUP = A number code for the fishing country, following Sea Around Us numbering                                                   |                        |                                                                                             |         |
-|                                         |                                                                                                                                       |                        |                                                                                             |         |
-|                                         | -   Gear = the fishing gear                                                                                                           |                        |                                                                                             |         |
-|                                         |                                                                                                                                       |                        |                                                                                             |         |
-|                                         | -   FGroup = the targeted functional group                                                                                            |                        |                                                                                             |         |
-|                                         |                                                                                                                                       |                        |                                                                                             |         |
-|                                         | -   Sector = the fishing sector defined by the law of the country                                                                     |                        |                                                                                             |         |
-|                                         |                                                                                                                                       |                        |                                                                                             |         |
-|                                         | -   NomActive = Nominal fishing effort of the active fleet                                                                            |                        |                                                                                             |         |
-|                                         |                                                                                                                                       |                        |                                                                                             |         |
-|                                         | -   Phase = either "spin-up" or "experiment"                                                                                          |                        |                                                                                             |         |
-+-----------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+------------------------+---------------------------------------------------------------------------------------------+---------+
-| File name                               | `socioeconomic/fishing/histsoc/effort-industrial-gridded_isimip3a_histsoc_1961_2010.csv` \| \|                                        |                        |                                                                                             |         |
-+-----------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+------------------------+---------------------------------------------------------------------------------------------+---------+
-| Gridded total industrial fishing effort | -   NomActive = Total nominal active fishing effort for the industrial sector summed across functional groups, gear, fishing country. | -   0.5                | Rousseau et al. 2022 in prep.                                                               |         |
-|                                         |                                                                                                                                       |                        |                                                                                             |         |
-|                                         |                                                                                                                                       | -   1841-2010          |                                                                                             |         |
-|                                         |                                                                                                                                       |                        |                                                                                             |         |
-|                                         |                                                                                                                                       | -   Annual             |                                                                                             |         |
-+-----------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+------------------------+---------------------------------------------------------------------------------------------+---------+
-| File name                               | `socioeconomic/fishing/histsoc/effort-artisanal-gridded_isimip3a_histsoc_1961_2010.csv` \| \|                                         |                        |                                                                                             |         |
-+-----------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+------------------------+---------------------------------------------------------------------------------------------+---------+
-| Gridded total artisanal fishing effort  | -   NomActive = Total nominal active fishing effort for the artisanal sector summed across functional groups, gear, fishing country.  | -   0.5                | Rousseau et al. 2022 in prep.                                                               |         |
-|                                         |                                                                                                                                       |                        |                                                                                             |         |
-|                                         |                                                                                                                                       | -   1841-2010          |                                                                                             |         |
-|                                         |                                                                                                                                       |                        |                                                                                             |         |
-|                                         |                                                                                                                                       | -   Annual             |                                                                                             |         |
-+-----------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+------------------------+---------------------------------------------------------------------------------------------+---------+
++-----------------------------------------+------------------------------------------------------------------------------------------+------------------------+----------------------------------------------------------------------+
+| Dataset                                 | Filename                                                                                 | Time period/Resolution | Reference/Source                                                     |
++-----------------------------------------+------------------------------------------------------------------------------------------+------------------------+----------------------------------------------------------------------+
+| Spatially aggregated fishing effort     | `socioeconomic/fishing/histsoc/effort_isimip3a_histsoc_1841_2010.csv`                    | -   1841-2010          | Novaglio et al. 2024. https://data.isimip.org/10.48364/ISIMIP.240282 |
+|                                         |                                                                                          |                        |                                                                      |
+|                                         |                                                                                          | -   Annual             |                                                                      |
++-----------------------------------------+------------------------------------------------------------------------------------------+------------------------+----------------------------------------------------------------------+
+| Gridded total industrial fishing effort | `socioeconomic/fishing/histsoc/effort-industrial-gridded_isimip3a_histsoc_1961_2010.csv` | -   0.5                | Novaglio et al. 2024. https://data.isimip.org/10.48364/ISIMIP.240282 |
+|                                         |                                                                                          |                        |                                                                      |
+|                                         |                                                                                          | -   1841-2010          |                                                                      |
+|                                         |                                                                                          |                        |                                                                      |
+|                                         |                                                                                          | -   Annual             |                                                                      |
++-----------------------------------------+------------------------------------------------------------------------------------------+------------------------+----------------------------------------------------------------------+
+| Gridded total artisanal fishing effort  | `socioeconomic/fishing/histsoc/effort-artisanal-gridded_isimip3a_histsoc_1961_2010.csv`  | -   0.5                | Novaglio et al. 2024. https://data.isimip.org/10.48364/ISIMIP.240282 |
+|                                         |                                                                                          |                        |                                                                      |
+|                                         |                                                                                          | -   1841-2010          |                                                                      |
+|                                         |                                                                                          |                        |                                                                      |
+|                                         |                                                                                          | -   Annual             |                                                                      |
++-----------------------------------------+------------------------------------------------------------------------------------------+------------------------+----------------------------------------------------------------------+
 
 ##### Table 8: Metadata for fishing effort variables.
 
@@ -630,7 +612,7 @@ The output files covering the experiment period (1961-2010) can be saved on DKRZ
 /work/bb0820/ISIMIP/ISIMIP3a/UploadArea/marine-fishery_regional/model_name/temp
 ```
 
-Please contact FishMIP coordinators or ISIMIP data managers directly ([isimip-data\@pik‐potsdam.de](mailto:isimip-data@pik%E2%80%90potsdam.de)) if you have any questions or clarifications before submitting files or if you do not find your model's path on DKRZ as described above.
+Please contact FishMIP coordinators ([fishmip.coordinators\@gmail.com](mailto:fishmip.coordinators@gmail.com)) or ISIMIP data managers directly ([isimip-data\@pik‐potsdam.de](mailto:isimip-data@pik%E2%80%90potsdam.de)) if you have any questions or clarifications before submitting files or if you do not find your model's path on DKRZ as described above.
 
 **Please contact FishMIP coordinators** if you would like to participate in this simulation round but have encountered issues with any aspect of the protocol.
 
