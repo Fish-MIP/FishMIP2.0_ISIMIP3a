@@ -613,10 +613,10 @@ provided here: <https://github.com/Fish-MIP/FishMIP_extracting-data>
 <table style="width:99%;">
 <colgroup>
 <col style="width: 13%" />
-<col style="width: 43%" />
+<col style="width: 44%" />
 <col style="width: 8%" />
 <col style="width: 30%" />
-<col style="width: 3%" />
+<col style="width: 1%" />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -824,9 +824,9 @@ covers the experiment period (1961-2010).
 <colgroup>
 <col style="width: 34%" />
 <col style="width: 7%" />
-<col style="width: 3%" />
+<col style="width: 2%" />
 <col style="width: 4%" />
-<col style="width: 49%" />
+<col style="width: 50%" />
 </colgroup>
 <thead>
 <tr class="header">
