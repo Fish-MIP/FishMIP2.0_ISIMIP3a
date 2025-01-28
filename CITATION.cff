@@ -1,30 +1,30 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 authors:
-  - family-names: "Blanchard"
-    given-names: "Julia L."
-    orcid: "https://orcid.org/0000-0003-0532-4824"
-  - family-names: "Novaglio"
-    given-names: "Camilla"
-    orcid: "https://orcid.org/0000-0003-3681-1377"
-  - family-names: "Harrison"
-    given-names: "Cheryl"
-    orcid: "https://orcid.org/0000-0003-4544-947X"
-  - family-names: "Petrik"
-    given-names: "Colleen"
-    orcid: "https://orcid.org/0000-0003-3253-0455"
-   - family-names: "Maury"
-    given-names: "Olivier"
-    orcid: "https://orcid.org/0000-0002-7999-9982" 
-  - family-names: "Tittensor"
-    given-names: "Derek P."
-  - family-names: "Eddy"
-    given-names: "Tyler"
-    orcid: "https://orcid.org/0000-0002-2833-9407"
-  - family-names: "Ortega-Cisneros"
-    given-names: "Kelly"
-    orcid: "https://orcid.org/0000-0003-2511-5448"
-  - name: "The Fisheries and Marine Ecosystem Model Intercomparison Project"
+  - family-names: Blanchard
+    given-names: Julia L.
+    orcid: https://orcid.org/0000-0003-0532-4824
+  - family-names: Novaglio
+    given-names: Camilla
+    orcid: https://orcid.org/0000-0003-3681-1377
+  - family-names: Harrison
+    given-names: Cheryl
+    orcid: https://orcid.org/0000-0003-4544-947X
+  - family-names: Petrik
+    given-names: Colleen
+    orcid: https://orcid.org/0000-0003-3253-0455
+   - family-names: Maury
+    given-names: Olivier
+    orcid: https://orcid.org/0000-0002-7999-9982
+  - family-names: Tittensor
+    given-names: Derek P.
+  - family-names: Eddy
+    given-names: Tyler
+    orcid: https://orcid.org/0000-0002-2833-9407
+  - family-names: Ortega-Cisneros
+    given-names: Kelly
+    orcid: https://orcid.org/0000-0003-2511-5448
+  - name: The Fisheries and Marine Ecosystem Model Intercomparison Project
 title: "FishMIP 2.0: Ocean System Pathways Simulation Protocol"
 version: 1.0.0
 identifiers:
