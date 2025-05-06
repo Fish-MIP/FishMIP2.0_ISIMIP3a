@@ -149,7 +149,7 @@ grid</strong></p></li>
 <td><p>3.Climate, no river input forcing, fishing – high res</p>
 <ul>
 <li><p><strong>CF:</strong> Climate variability constrained by
-reanalysis atmospheric forcing (GFDL-COBALT2 “<em>control run</em>” only
+reanalysis atmospheric forcing (GFDL-COBALT2 “<em>control run</em>” (ctrlclim) only
 forced by JRA-55) using <strong>0.25 degree grid</strong></p></li>
 <li><p><strong>DHF:</strong> Varying direct human influences according
 to observed reconstructed fishing effort time series (histsoc).</p></li>
