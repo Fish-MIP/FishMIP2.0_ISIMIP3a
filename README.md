@@ -119,7 +119,7 @@ listed below. Please prioritize the core runs below, and provide the
 <tr class="odd">
 <td><p><strong>Model evaluation</strong></p>
 <p>2 core runs</p></td>
-<td><p>1.Climate, river inputs, fishing – high res</p>
+<td><p>1. Climate, river inputs, fishing – high res</p>
 <ul>
 <li><p><strong>CF:</strong> Climate variability constrained by
 reanalysis atmospheric forcing (GFDL-COBALT2 forced by JRA-55 and river
@@ -133,7 +133,7 @@ to observed reconstructed fishing effort time series (histsoc).</p></li>
 </tr>
 <tr class="even">
 <td></td>
-<td><p>2.Climate, river inputs, no fishing – high res</p>
+<td><p>2. Climate, river inputs, no fishing – high res</p>
 <ul>
 <li><p><strong>CF:</strong>  same as above using <strong>0.25 degree
 grid</strong></p></li>
@@ -146,7 +146,7 @@ grid</strong></p></li>
 <tr class="odd">
 <td><p><strong>Riverine influx sensitivity</strong></p>
 <p>2 optional (but preferred) runs</p></td>
-<td><p>3.Climate, no river input forcing, fishing – high res</p>
+<td><p>3. Climate, no river input forcing, fishing – high res</p>
 <ul>
 <li><p><strong>CF:</strong> Climate variability constrained by
 reanalysis atmospheric forcing (GFDL-COBALT2 “<em>control run</em>” only
@@ -160,7 +160,7 @@ to observed reconstructed fishing effort time series (histsoc).</p></li>
 </tr>
 <tr class="even">
 <td></td>
-<td><p>4.Climate, no river input forcing, no fishing – high res</p>
+<td><p>4. Climate, no river input forcing, no fishing – high res</p>
 <ul>
 <li><p><strong>CF:</strong>  same as above using <strong>0.25 degree
 grid</strong></p></li>
@@ -172,8 +172,8 @@ grid</strong></p></li>
 </tr>
 <tr class="odd">
 <td><p><strong>Resolution sensitivity test</strong></p>
-<p>2 optional (but helpful )runs</p></td>
-<td><p>5.Climate, river input forcing, fishing – low res</p>
+<p>2 optional (but helpful) runs</p></td>
+<td><p>5. Climate, river input forcing, fishing – low res</p>
 <ul>
 <li><p><strong>CF:</strong> Climate variability constrained by
 reanalysis atmospheric forcing (GFDL-COBALT2 forced by JRA-55 and river
@@ -188,7 +188,7 @@ to observed reconstructed fishing effort time series (histsoc).</p></li>
 </tr>
 <tr class="even">
 <td></td>
-<td><p>6.Climate, river input forcing, no fishing – low res</p>
+<td><p>6. Climate, river input forcing, no fishing – low res</p>
 <ul>
 <li><p><strong>CF</strong>:  same as above using <strong>1 degree
 grid</strong></p></li>
@@ -201,7 +201,7 @@ grid</strong></p></li>
 <tr class="odd">
 <td><p><strong>Control sensitivity test</strong></p>
 <p>2 optional runs</p></td>
-<td><p>7.Climate, no river input forcing, fishing – low res</p>
+<td><p>7. Climate, no river input forcing, fishing – low res</p>
 <ul>
 <li><p><strong>CF:</strong> Climate variability constrained by
 reanalysis atmospheric forcing (GFDL-COBALT2 forced by JRA-55 and river
@@ -216,7 +216,7 @@ to observed reconstructed fishing effort time series (histsoc).</p></li>
 </tr>
 <tr class="even">
 <td></td>
-<td><p>8.Climate, no river input forcing, no fishing – low res</p>
+<td><p>8. Climate, no river input forcing, no fishing – low res</p>
 <ul>
 <li><p><strong>CF</strong>:  same as above using <strong>1 degree
 grid</strong></p></li>
@@ -628,8 +628,8 @@ provided here: <https://github.com/Fish-MIP/FishMIP_extracting-data>
 </tr>
 <tr class="even">
 <td>File name</td>
-<td><code>socioeconomic/fishing/histsoc/effort_isimip3a_histsoc_1841_2010.csv</code>|
-|</td>
+<td><code>socioeconomic/fishing/histsoc/effort_isimip3a_histsoc_1841_2010.csv</code>
+</td>
 <td></td>
 <td></td>
 <td></td>
@@ -661,7 +661,7 @@ Rousseau et al. 2022 in prep.</td>
 <tr class="even">
 <td>File name</td>
 <td><code>socioeconomic/fishing/histsoc/effort-industrial-gridded_isimip3a_histsoc_1961_2010.csv</code>
-| |</td>
+</td>
 <td></td>
 <td></td>
 <td></td>
@@ -683,7 +683,7 @@ sector summed across functional groups, gear, fishing country.</li>
 <tr class="even">
 <td>File name</td>
 <td><code>socioeconomic/fishing/histsoc/effort-artisanal-gridded_isimip3a_histsoc_1961_2010.csv</code>
-| |</td>
+</td>
 <td></td>
 <td></td>
 <td></td>
@@ -713,7 +713,7 @@ sector summed across functional groups, gear, fishing country.</li>
 | Sector           | The fishing sector defined by the law of the country                                     | Name code        | I = Industrial and A = artisanal, where artisanal include powered and unpowered artisanal fleets                                                                                                                                                                                                           |
 | LME              | Large Marine Ecosystem Number                                                            | Number code      | A number code of the Large Marine ecosystem in which the Effort is occurring                                                                                                                                                                                                                               |
 | eez_country_name | Exclusive Economic Zone                                                                  | Name code        | The country-level exclusive economic zone (or high seas) name in which fishing effort is occurring                                                                                                                                                                                                         |
-| SAUP             | A number code for the fishing country, following Sea Around Us numbering                 | Number code      | Ex supranational entities (USSR, Yugoslavia) are disaggregated to their constituent countries. Serbian Fishing Effort included with Montenegro. Crimea included with Ukraine. \|                                                                                                                           |
+| SAUP             | A number code for the fishing country, following Sea Around Us numbering                 | Number code      | Ex supranational entities (USSR, Yugoslavia) are disaggregated to their constituent countries. Serbian Fishing Effort included with Montenegro. Crimea included with Ukraine.                                                                                                                            |
 | Gear             | The fishing gear                                                                         | Name code        | Gear names                                                                                                                                                                                                                                                                                                 |
 | FGroup           | The targeted functional group                                                            | Name code        | Functional groups are in accordance with those used by the Sea Around Us Project                                                                                                                                                                                                                           |
 | NomActive        | Nominal fishing effort (i.e., not including the technological creep) of the active fleet | Days at sea X kW | NomActive (of the active fleet; i.e., total) = P (engine power of active the fleet; i.e., total) x DAS (average days at sea of one vessel). Average DAS for one vessel \~ 200 DAS/year. NomActive corresponds to the total (reported, IUU, discards) catch. To find NomActive in DAS do (NomActive/P) X NV |
@@ -1142,7 +1142,7 @@ osmose_gfdl-mom6_cobalt2_none_obsclim_histsoc_default_tcb_benguela_monthly_1961_
 Please see the climate-scenario, soc-scenario, sens-scenario and
 variable identifiers given in the tables of this document.
 
-### Path to outut files on DKRZ:
+### Path to output files on DKRZ:
 
 **Global models**
 
