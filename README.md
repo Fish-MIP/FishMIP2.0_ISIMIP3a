@@ -273,9 +273,8 @@ intercomparison and analysis.**
 Tables 2-4 describe the different scenarios for the model runs described
 in Table 1. These specifiers are used in the file names of the
 corresponding input files and should also be used for the names of the
-output files (see 
-[7](https://protocol.isimip.org/#reporting-model-results). Reporting
-model results).
+output files (see Section [7](https://protocol.isimip.org/#reporting-model-results). 
+Reporting model results).
 
 ##### Table 2: Climate scenario specifiers (climate-scenario).
 
@@ -880,7 +879,7 @@ invertebrates)</td>
 <td>Total Catch Density (all commercial functional groups / size
 classes)</td>
 <td><strong>tc</strong></td>
-<td>g m-2</td>
+<td>g m-2 yr-1</td>
 <td><p>0.25° grid</p>
 <p>monthly</p></td>
 <td>Catch at sea (all catch as a result of all effort including reported
@@ -890,7 +889,7 @@ and IUU) summed for both Industrial and Artisanal sector.</td>
 <td>Total Industrial Catch Density (all commercial functional groups /
 size classes)</td>
 <td><strong>tic</strong></td>
-<td>g m-2</td>
+<td>g m-2 yr-1</td>
 <td><p>0.25° grid</p>
 <p>monthly</p></td>
 <td>Catch at sea (all catch as a result of all effort including reported
@@ -899,7 +898,7 @@ and IUU) for Industrial sector only.</td>
 <tr class="odd">
 <td>Total Catch Density in log10 Weight Bins across both sectors</td>
 <td><strong>tclog10</strong></td>
-<td>g m-2</td>
+<td>g m-2 yr-1</td>
 <td><p>0.25° grid</p>
 <p>monthly</p></td>
 <td><p><strong>Level dimensions:</strong> (time, bins, lat, lon).</p>
@@ -911,7 +910,7 @@ and IUU) for Industrial sector only.</td>
 <td>Total Pelagic Density Catch across Artisanal and Industrial
 sectors</td>
 <td><strong>tpc</strong></td>
-<td>g m-2</td>
+<td>g m-2 yr-1</td>
 <td><p>0.25° grid</p>
 <p>monthly</p></td>
 <td>Catch at sea of all pelagic consumers (trophic level &gt;1,
@@ -921,7 +920,7 @@ vertebrates and invertebrates)</td>
 <td>Total Demersal Catch Density across Artisanal and Industrial
 sectors</td>
 <td><strong>tdc</strong></td>
-<td>g m-2</td>
+<td>g m-2 yr-1</td>
 <td><p>0.25° grid</p>
 <p>monthly</p></td>
 <td>Catch at sea of all demersal consumers (trophic level &gt;1,
@@ -992,7 +991,7 @@ variable</td>
 <tr class="odd">
 <td>Catch Density of Small Pelagics &lt;30cm</td>
 <td><strong>cp30cm</strong></td>
-<td>g m-2</td>
+<td>g m-2 yr-1</td>
 <td><p>0.25° grid</p>
 <p>monthly</p></td>
 <td>Catch at sea of pelagic species with L infinity &lt;30 cm</td>
@@ -1000,7 +999,7 @@ variable</td>
 <tr class="even">
 <td>Catch Density of Medium Pelagics &gt;=30cm and &lt;90cm</td>
 <td><strong>cp30to90cm</strong></td>
-<td>g m-2</td>
+<td>g m-2 yr-1</td>
 <td><p>0.25° grid</p>
 <p>monthly</p></td>
 <td>Catch at sea of pelagic species with L infinity &gt;=30 cm and
@@ -1009,7 +1008,7 @@ variable</td>
 <tr class="odd">
 <td>Catch Density of Large Pelagics &gt;=90cm</td>
 <td><strong>cp90cm</strong></td>
-<td>g m-2</td>
+<td>g m-2 yr-1</td>
 <td><p>0.25° grid</p>
 <p>monthly</p></td>
 <td>Catch at sea of pelagic species with L infinity &gt;=90 cm</td>
@@ -1017,7 +1016,7 @@ variable</td>
 <tr class="even">
 <td>Catch Density of Small Demersals &lt;30cm</td>
 <td><strong>cd30cm</strong></td>
-<td>g m-2</td>
+<td>g m-2 yr-1</td>
 <td><p>0.25° grid</p>
 <p>monthly</p></td>
 <td>Catch at sea of demersal species with L infinity &lt;30 cm</td>
@@ -1025,7 +1024,7 @@ variable</td>
 <tr class="odd">
 <td>Catch Density of Medium Demersals &gt;=30cm and &lt;90cm</td>
 <td><strong>cd30to90cm</strong></td>
-<td>g m-2</td>
+<td>g m-2 yr-1</td>
 <td><p>0.25° grid</p>
 <p>monthly</p></td>
 <td>Catch at sea of demersal species with L infinity &gt;=30 cm and
@@ -1034,7 +1033,7 @@ variable</td>
 <tr class="even">
 <td>Catch Density of Large Demersals &gt;=90cm</td>
 <td><strong>cd90cm</strong></td>
-<td>g m-2</td>
+<td>g m-2 yr-1</td>
 <td><p>0.25° grid</p>
 <p>monthly</p></td>
 <td>Catch at sea of demersal species with L infinity &gt;=90 cm</td>
@@ -1105,7 +1104,7 @@ Things to note:
   if the output covers the spin-up and transition period (1841-1960) or
   days since 1901-1-1 00:00:00 if the output covers the experiment
   period (1961-2010). We have provided .csv files to be used for the
-  time dimension in creating NetCDF files based on the 365 days
+  time dimension in creating NetCDF files based on the standard (Gregorian)
   calendar. Please see time_axix_spinup.csv and time_axis_experiment.csv
   in this repository. The script time_axis.r was used to create these
   files.
