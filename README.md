@@ -273,9 +273,8 @@ intercomparison and analysis.**
 Tables 2-4 describe the different scenarios for the model runs described
 in Table 1. These specifiers are used in the file names of the
 corresponding input files and should also be used for the names of the
-output files (see 
-[7](https://protocol.isimip.org/#reporting-model-results). Reporting
-model results).
+output files (see Section [7](https://protocol.isimip.org/#reporting-model-results). 
+Reporting model results).
 
 ##### Table 2: Climate scenario specifiers (climate-scenario).
 
